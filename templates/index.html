@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Intent Classifier | Zaid Nserat</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <link rel="stylesheet" href="/static/css/style.css">
+</head>
+<body>
+  <div class="container">
+    <!-- Creator Banner -->
+    <div class="creator-banner">
+      <h2>Zaid Nserat</h2>
+      <p>Machine Learning Engineer & Developer</p>
+      
+      <div class="social-links">
+        <a href="https://github.com/zaed-nusirat0" class="social-link github-bg" target="_blank">
+          <i class="fab fa-github"></i>
+        </a>
+        <a href="https://www.kaggle.com/zaed2003" class="social-link kaggle-bg" target="_blank">
+          <i class="fab fa-kaggle"></i>
+        </a>
+        <a href="https://www.linkedin.com/in/zaid-nusirat-192a7a275/" class="social-link linkedin-bg" target="_blank">
+          <i class="fab fa-linkedin-in"></i>
+        </a>
+      </div>
+    </div>
+
+    <!-- Main Card -->
+    <div class="main-card">
+      <h1 style="text-align: center; margin-bottom: 1.5rem; background: linear-gradient(to right, var(--primary), var(--secondary)); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">
+        <i class="fas fa-robot"></i> Intent Classifier
+      </h1>
+      
+      <div class="input-section">
+        <textarea id="text-input" placeholder="Type your text here..."></textarea>
+        <button id="classify-btn" class="classify-btn">
+          <i class="fas fa-magic"></i> Detect Intent
+        </button>
+      </div>
+
+      <div class="result-section hidden">
+        <div class="result-header">
+          <i class="fas fa-chart-bar" style="color: var(--primary);"></i>
+          <h3>Prediction Results</h3>
+        </div>
+        <div class="result-content">
+          <div class="result-item">
+            <span class="result-label">Your Text:</span>
+            <span id="original-text" class="result-value"></span>
+          </div>
+          <div class="result-item">
+            <span class="result-label">Intent:</span>
+            <span id="intent" class="result-value intent-value"></span>
+          </div>
+          <div class="result-item">
+            <span class="result-label">Confidence:</span>
+            <span id="confidence" class="result-value confidence-value"></span>
+          </div>
+        </div>
+      </div>
+
+      <div class="examples-section">
+        <h4 class="examples-title">
+          <i class="fas fa-lightbulb" style="color: var(--accent);"></i> Try These Examples:
+        </h4>
+        <div class="example-buttons">
+          <button class="example-btn">Play my workout playlist</button>
+          <button class="example-btn">What's the weather in Amman?</button>
+          <button class="example-btn">Book a table for 4 tonight</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="/static/js/script.js"></script>
+</body>
+</html>
