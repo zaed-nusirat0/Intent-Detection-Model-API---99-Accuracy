@@ -50,23 +50,13 @@ The API will be available at `http://127.0.0.1:8000`.
 
 ## Docker Deployment
 
-### 1. Build the Docker Image
-```sh
-docker build -t intent_detection .
-```
-
-### 2. Run the Docker Container
-```sh
-docker run -d -p 8000:8000 intent_detection
-```
-
-### 3. Pull the Prebuilt Docker Image
+### 1. Pull the Prebuilt Docker Image
 Instead of building the image locally, you can pull it directly from Docker Hub:
 ```sh
 docker pull zaidtech/intent_detection_transformer
 ```
 
-### 4. Run the Pulled Image
+### 2. Run the Pulled Image
 ```sh
 docker run -d -p 8000:8000 --name <name container> name image
 ```
